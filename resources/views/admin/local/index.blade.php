@@ -2,6 +2,7 @@
 @section('content')
 
 <div id="local" class="container">
+    <h1>@{{ tittle }}</h1>
         <a href="#" class="btn btn-primary float-right my-3" data-toggle="modal" data-target="#create">Nuevo Local</a>
         <table class="table table-hover table-stripe ">
             <thead>

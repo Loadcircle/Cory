@@ -22,6 +22,7 @@ class CreateTicketsTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('ticket_number');
+            $table->string('local_val')->unique();
             $table->string('consume')->nullable();
             $table->integer('locals_id')->unsigned();
 

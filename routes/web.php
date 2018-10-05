@@ -33,6 +33,7 @@ Route::middleware(['auth',])->group(function(){
 
     Route::resource('admin/local', 'admin\LocalController', ['except' => 'show', 'create', 'edit']);
 
-    Route::resource('admin/ticket', 'admin\TicketController');
+    Route::get('admin/ticket', 'admin\TicketController@index')->name('ticket.index');
+    Route::post('admin/ticket', 'admin\TicketController@store')->name('ticket.store');
 
 });
