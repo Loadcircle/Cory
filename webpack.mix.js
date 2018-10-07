@@ -22,5 +22,9 @@ mix.scripts(['resources/js/vue.js',
 
 mix.styles(['resources/css/bootstrap.min.css',
              'resources/css/toastr.min.css',
-             'resources/css/styles.css'
+             'resources/css/app.css'
             ], 'public/css/app.css');
+
+mix.styles(['resources/css/bootstrap.min.css',
+             'resources/css/views.css'
+            ], 'public/css/views.css');

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div id="ticket" class="container">
+<div id="ticket" class="container" v-cloak>
     <h1> @{{ tittle }}</h1>
         <table class="table table-hover table-stripe ">
             <thead>
@@ -13,8 +13,8 @@
                     <th>Telefono</th>
                     <th>N° de Boleta</th>
                     <th>Local</th>
-                    <th>Consumo</th>
                     <th>Fecha de Ingreso</th>
+                    <th>Consumo</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,8 +27,8 @@
                     <td>@{{ ticket.phone }}</td>
                     <td>@{{ ticket.ticket_number }}</td>
                     <td>@{{ ticket.l_name }}</td>
-                    <td>@{{ ticket.consume }}</td>
                     <td>@{{ ticket.created_at }}</td>
+                    <td>@{{ ticket.consume }}</td>
                 </tr>
             </tbody>
         </table>
