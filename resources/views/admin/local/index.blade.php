@@ -19,7 +19,7 @@
                     <td>@{{ local.id }}</td>
                     <td>@{{ local.name }}</td>
                     <td>
-                        <a href="#" class="btn btn-warning btn-sm" v-on:click.prevent="editLocal(local)">
+                        <a href="#" class="btn btn-primary btn-sm" v-on:click.prevent="editLocal(local)">
                             Editar
                         </a>
                         <a href="#" class="btn btn-danger btn-sm" v-on:click.prevent="deleteLocal(local)">

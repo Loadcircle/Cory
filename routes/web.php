@@ -13,7 +13,7 @@
 
 Route::get('/', 'LandingController@index')->name('index');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -29,9 +29,21 @@ Route::middleware(['auth',])->group(function(){
         return view('admin.ticket.index');
     })->name('tickets.index');
 
+    //Locales
     Route::resource('admin/local', 'admin\LocalController', ['except' => 'show', 'create', 'edit']);
 
-    Route::get('admin/ticket', 'admin\TicketController@index')->name('ticket.index');
+    //Administrar Tickets
+    Route::get('admin/ticket/{results}', 'admin\TicketController@index')->name('ticket.index');
+    Route::get('admin/ticketE/{email}', 'admin\TicketController@email')->name('ticket.email');
+    Route::get('admin/ticketR/{rut}', 'admin\TicketController@rut')->name('ticket.rut');
+    Route::get('admin/ticketL/{id}', 'admin\TicketController@local')->name('ticket.local');
+    //Actualizar consumo
+    Route::put('admin/ticketC/{id}', 'admin\TicketController@consume')->name('ticket.consume');
+
+    //totales boletas
+    Route::get('admin/ticketT', 'admin\TicketController@counter')->name('ticket.counter');
+
+    //guardar boletas
     Route::post('admin/ticket', 'admin\TicketController@store')->name('ticket.store');
 
 });

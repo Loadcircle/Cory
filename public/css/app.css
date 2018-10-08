@@ -17,3 +17,38 @@
     [v-cloak]{
         display: none;
     }
+    .dropdown-menu.show{
+        width: 100%;
+    }
+    .relative{
+        position: relative;
+    }
+    .loader{
+        border: 8px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 70px;
+        height: 70px;
+        -webkit-animation: spin 1.5s cubic-bezier(0.49, 1.07, 1, 0.99) infinite;
+        animation: spin 1.5s cubic-bezier(0.49, 1.07, 1, 0.99) infinite;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        bottom: -60px;
+        margin: auto;
+    }
+    .btn-consume{
+        width: 100%;
+        height: 35px;
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
