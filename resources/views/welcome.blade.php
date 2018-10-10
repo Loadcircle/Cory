@@ -27,7 +27,7 @@
        <div class="col-4">
             <label for="locals_id">locals_id</label>
            <select class="form-control" name="locals_id" id="locals_id">
-                <option>Selecciona un Local</option>
+                <option value="" >Selecciona un Local</option>
                 @foreach ($locals as $local)
                 <option value="{{ $local->id }}">{{ $local->name }}</option>
                 @endforeach

@@ -99,36 +99,6 @@ class TicketController extends Controller
     }
 
 
-    function store(Request $request)
-    {
-        $local_val = $request->ticket_number.'L-'.$request->locals_id;
-        $request->merge(['local_val' => $local_val]);
-
-        $this->validate($request, [
-            'name' => 'required|max:30',
-            'lastname' => 'required|max:30',
-            'rut' => 'required|max:9',
-            'email' => 'required|email',
-            'phone' => 'required|max:12',
-            'ticket_number' => 'required|max:6',
-            'local_val' => 'required|unique:tickets,local_val',
-            'locals_id' => 'required',
-        ]);
-
-
-        Ticket::create($request->all());
-
-        $counter = Counter::where('rut', '=', $request->rut)->count();
-
-        if($counter > 0){
-            Counter::where('rut', '=', $request->rut)->increment('number');
-        }else{
-            Counter::create(['rut' => $request->rut, 'number' => '1']);
-        }
-
-        return;
-    }
-
     function counter()
     {
         $counter = Counter::orderBy('number', 'DESC')->get();

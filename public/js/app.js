@@ -12793,7 +12793,7 @@ var ticket_instance = new Vue({
             }
         },
         methods: {
-            getTickets: function(page, results = 2){
+            getTickets: function(page, results = 10){
                 var url = '/admin/ticket/' + results +'?page=' + page;
                 axios.get(url).then(response => {
                     this.tickets = response.data.tickets.data,

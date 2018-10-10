@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'LandingController@index')->name('index');
+//guardar boletas
+Route::post('saveTicket', 'LandingController@store')->name('ticket.store');
 
 Auth::routes(['register' => false]);
 
@@ -42,8 +44,5 @@ Route::middleware(['auth',])->group(function(){
 
     //totales boletas
     Route::get('admin/ticketT', 'admin\TicketController@counter')->name('ticket.counter');
-
-    //guardar boletas
-    Route::post('admin/ticket', 'admin\TicketController@store')->name('ticket.store');
 
 });

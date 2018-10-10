@@ -11,6 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
+            //Admin
 mix.scripts(['resources/js/vue.js',
              'resources/js/axios.js',
              'resources/js/jquery.js',
@@ -24,6 +25,14 @@ mix.styles(['resources/css/bootstrap.min.css',
              'resources/css/toastr.min.css',
              'resources/css/app.css'
             ], 'public/css/app.css');
+
+
+            //Vistas
+mix.scripts(['resources/js/jquery.js',
+            'resources/js/popper.min.js',
+            'resources/js/bootstrap.min.js',
+            'resources/js/views.js'
+            ], 'public/js/views.js');
 
 mix.styles(['resources/css/bootstrap.min.css',
              'resources/css/views.css'
