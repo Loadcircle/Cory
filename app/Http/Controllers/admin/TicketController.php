@@ -7,7 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Ticket;
 use App\Local;
 use App\Counter;
-
+use App\Exports\TicketExport;
+use Maatwebsite\Excel\Facades\Excel;
 class TicketController extends Controller
 {
     function index(Request $request)
@@ -104,6 +105,11 @@ class TicketController extends Controller
         $counter = Counter::orderBy('number', 'DESC')->get();
 
         return $counter;
+    }
+
+    public function export()
+    {
+        return Excel::download(new TicketExport, 'boletas.xlsx');
     }
 
 }

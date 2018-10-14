@@ -45,4 +45,7 @@ Route::middleware(['auth',])->group(function(){
     //totales boletas
     Route::get('admin/ticketT', 'admin\TicketController@counter')->name('ticket.counter');
 
+    //exportar boletas
+    Route::get('admin/export', 'admin\TicketController@export')->name('ticket.export');
+
 });

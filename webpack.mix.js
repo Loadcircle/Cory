@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
             //Admin
-mix.scripts(['resources/js/vue.js',
+mix.scripts(['resources/js/vue.min.js',
              'resources/js/axios.js',
              'resources/js/jquery.js',
              'resources/js/popper.min.js',

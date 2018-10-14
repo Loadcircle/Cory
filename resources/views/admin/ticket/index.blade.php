@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-md-6 col-12">
             <h1 class=""> @{{ tittle }}</h1>
+            <a class="btn btn-primary my-1" href="{{ route('ticket.export') }}">Descargar boletas</a>
         </div>
         <div class="col-md-6 col-12">
             <div class="row">
