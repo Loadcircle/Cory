@@ -1,0 +1,552 @@
+@font-face{
+    font-family: sofiapro-regular;
+    src: url(../Cory/sofiapro-regular.otf);
+}
+@font-face{
+    font-family: sofiapro-light;
+    src: url(../Cory/sofiapro-light.otf);
+}
+*{
+    font-family: sofiapro-regular;
+}
+span{
+    font-weight: bold;
+}
+a{
+    text-decoration: none!important;
+}
+a:link, a:hover{
+    text-decoration: none!important;
+}
+.menu{
+    background-color: #f8c99d;
+    background-image: url(../Cory/fondo.png);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.border_white{
+    border: solid 3px #fff;
+    padding: 35px 0;
+    position: relative;
+}
+.cory_35{
+    position: absolute;
+    max-width: 150px;
+    top: -45px;
+    right: -75px;
+    text-align: center;
+}
+.cory_35 p{
+    color: #fff;
+    font-size: 24px;
+}
+.btn-blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #150198;
+    height: 40px;
+    width: 100px;
+}
+.btn-blue:hover{
+    color: #fff;
+}
+.cont_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+.link-blue{
+    color: #150198;
+}
+.redes{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.redes a{
+    margin: 0 5px;
+}
+.color-blue{
+    color: #150198;
+}
+.cake{
+    display: flex;
+    margin-top: -50px;
+    z-index: 100;
+    position: relative;
+}
+.cake img{
+    width: 33.3%;
+    align-self: center;
+}
+.cumple_35{
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+.cumple_35 img{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.cumple_35 h3{
+    color: #150198;
+    margin: 0;
+}
+.cumple_35 p{
+    margin: 0;
+}
+
+/*titulo fiesta*/
+
+.titulo_fiesta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_fiesta *{
+    color: #150198;
+}
+.titulo_fiesta > p:nth-child(1){
+    font-size: 40px;
+    letter-spacing: 6px;
+    margin: 0;
+    line-height: 0;
+}
+.titulo_fiesta > div{
+    display: flex;
+    align-items: center;
+}
+.titulo_fiesta > div > p{
+    font-size: 51px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 8.2px;
+}
+.titulo_fiesta > div > div > p{
+    margin: 0;
+    line-height: .8;
+    font-size: 25px;
+}
+.titulo_fiesta > p:nth-child(3){
+    margin: 0;
+    line-height: 0;
+    font-size: 45px;
+    letter-spacing: 6.8px;
+}
+.titulo_fiesta > p:nth-child(4){
+    margin: 0;
+    line-height: 2;
+    font-size: 45px;
+    letter-spacing: 7px;
+}
+.btn-pink{
+    color: #fff;
+    background: #ff036a;
+    border-radius: 0;
+    display: flex;
+    margin: auto;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer
+}
+.btn-blue{
+    color: #fff;
+    background: #150198;
+    border-radius: 0;
+    display: flex;
+    margin: auto;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer
+}
+/*Estilos landing*/
+
+#landing .fondos{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    background: #1d049e;
+}
+#landing .fondos .bg-1{
+    background-color: #1d049e;
+    background-image: url(../Cory/fondo-azul.png);
+    background-size: cover;
+}
+#landing .fondos .bg-2{
+    background: url(../Cory/montana.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#landing .menu{
+    background: none;
+}
+#landing .titulo_fiesta *{
+    color: #fff!important;
+}
+#landing > div.menu > div.container.border_white > div.row.how_to > div:nth-child(1) > p{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+#landing footer{
+    background: #1d049e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+#landing footer p{
+    margin: 0;
+}
+#landing > div.menu > div.container.border_white > div.row.how_to > div:nth-child(1) > h4{
+    color: #fff;
+}
+#landing .how_to{
+    margin: 50px 0;
+}
+#landing .nav a{
+    color: #fff;
+}
+#landing .nav a:hover{
+    color: #fff;
+}
+#landing > div.container.pink-floats.my-5 > div > div:nth-child(1) > div{
+    max-width: 340px;
+    margin: auto;
+}
+#landing > div.container.pink-floats.my-5 > div > div:nth-child(1) > div > p:nth-child(1){
+    font-size: 24px;
+    color: #fff;
+}
+#landing > div.container.pink-floats.my-5 > div > div:nth-child(1) > div > p:nth-child(2){
+    font-size: 18px;
+    color: #fff;
+}
+#landing > div.container.pink-floats.my-5 > div > div:nth-child(2){
+    display: flex;
+}
+#landing > div.container.pink-floats.my-5 > div{
+    padding: 60px 0;
+    background-color: #ff036a;
+    background-image: url(../Cory/fondo.png);
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.pink-floats{
+    position: relative;
+}
+#landing .pie{
+    width: 200px;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+}
+#landing .sello{
+    width: 200px;
+    position: absolute;
+    top: -80px;
+    left: -80px;
+}
+#landing .coffe{
+    width: 200px;
+    position: absolute;
+    top: -70px;
+    right: -80px;
+}
+.padding-0{
+    padding: 0;
+}
+#landing > div.cartas > div{
+    width: 100%;
+    margin: auto;
+}
+#landing .hover-box{
+    position: relative;
+    overflow: hidden;
+}
+#landing .second-v{
+    position: absolute;
+}
+#landing > div.aliados > div > div:nth-child(1), #landing > div.aliados > div > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing > div.aliados > div{
+    height: 180px;
+    width: 100%;
+}
+#landing > div.aliados > div > div:nth-child(2) > img{
+    max-width: 350px;
+}
+#landing .aliados{
+    background: #8d8b90;
+}
+#landing .blue-ali{
+    color: #150198;
+    font-size: 24px;
+}
+
+/*Estilos landing*/
+
+/*Estilos como participar---------------------------------------------------------------------------*/
+#como .sello{
+    position: relative;
+}
+#como .sello:before{
+    content: '';
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 10;
+    background: url(../Cory/Sello/sello.png);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#como > div.container.sello > div > div:nth-child(1){
+    background: url(../Cory/montana.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#como footer{
+    background: #f90c68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+#como footer p{
+    margin: 0;
+    color: #fff;
+}
+#como .sello p{
+    font-size: 30px;
+    color: #fff;
+}
+#como > div.container.sello.my-5 > div > div:nth-child(2){
+    background-color: #150198;
+    background-image: url(../Cory/fondo-azul.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    padding: 50px 30px;
+}
+#como > div.container.sello.my-5 > div > div:nth-child(1){
+    padding: 30px;
+}
+#como .border_white_2{
+    border: solid 3px #fff;
+    padding: 35px 0;
+    height: 100%;
+}
+#como > div.container.sello.my-5 > div{
+    background: #150198;
+}
+#como > div.container.sello.my-5 > div > div:nth-child(2) > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8c99b;
+    border: none;
+    height: 50px;
+    width: 200px;
+    color: #150198;
+    cursor: pointer;
+}
+/*Estilos como participar---------------------------------------------------------------------------*/
+
+
+/*Estilos bases*/
+#bases .modal-dialog{
+    max-width:80%!important;
+    margin: auto!important;
+    margin-top: 20px!important;
+}
+#bases .cory_35{
+    max-width: 100px;
+}
+#bases .cory_35{
+    max-width: 90px;
+    top: -30px;
+    right: -25px;
+}
+#bases .redes a img{
+    max-width: 30px;
+}
+#bases .menu{
+    padding: 50px;
+}
+#bases > div > div > div > div > div:nth-child(3){
+    padding: 0 15px;
+    color: #150198;
+    box-sizing: border-box;
+}
+/*Estilos bases*/
+
+/*Estilos formulario*/
+#formulario .form-group{
+    display: flex;
+    align-items: center;
+}
+#formulario .form-group input:not([type="submit"]), #formulario .form-group select{
+    margin-left: 20px;
+    height: 30px;
+    border: solid 2px #ff036a;
+    font-size: 12px;
+}
+#formulario .form-group label{
+    color: #150198;
+    font-family: sofiapro-light;
+}
+#formulario .form-group input[type="submit"]{
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+    background: #150198;
+    cursor: pointer;
+}
+#formulario .modal-content{
+    border-radius: 0;
+    padding: 15px;
+    background-color: #fff;
+    background-image: url(../Cory/fondo.png);
+    position: relative;
+}
+#formulario .modal-content:before{
+    content: '';
+    position: absolute;
+    top: -33px;
+    left: -42px;
+    width: 150px;
+    background: url(../Cory/logo.png);
+}
+#formulario .error{
+    display: none;
+}
+/*Estilos formulario*/
+
+/*Estilos exito*/
+#exito .modal-content{
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+#exito .planeta{
+    background: url(../Cory/planeta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 15px;
+    position: relative;
+}
+#exito .planeta:before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: url(../Cory/logo.png);
+    background-size: cover;
+    top: 1%;
+    left: 27%;
+}
+#exito .planeta *{
+    color: #fff;
+}
+#exito > div > div > div > p.text-center{
+    max-width: 370px;
+    margin: auto;
+}
+#exito > div > div > div > img{
+    max-width: 150px;
+}
+#exito .redes{
+    margin: auto;
+}
+/*Estilos exito*/
+
+/*Media*/
+@media (max-width: 997px){
+    #exito .planeta:before{
+        left: 27%;
+    }
+}
+@media (max-width: 768px){
+    .cory_35{
+        top: -50px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .nav{
+        margin-top: 105px;
+    }
+    .menu > div > div.row.nav > div:nth-child(3) .cont_btns{
+        flex-direction: column;
+    }
+    .titulo_fiesta{
+        margin-top: 25px;
+    }
+    #landing > div.container.pink-floats.my-5 > div{
+        background-image: none;
+    }
+    #landing .sello, #landing .coffe{
+        display: none;
+    }
+    .cont_btns{
+        flex-direction: column;
+    }
+    .redes{
+        margin: 10px 0;
+    }
+    #landing > div.menu > div.container.border_white > div.row.nav > div:nth-child(1) > div > a{
+        margin: 20px 0;
+    }
+}
+@media (max-width: 575px){
+    #formulario .modal-content:before{
+        content: none;
+    }
+    #exito .planeta:before{
+        width: 50px;
+        height: 50px;
+        top: 7%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #exito .planeta:before{
+        width: 50px;
+        height: 50px;
+        top: 7%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+

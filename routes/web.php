@@ -21,6 +21,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Rutas
 
+//Como participar
+Route::get('/como-participar', function(){
+    return view('como');
+})->name('participa');
 Route::middleware(['auth',])->group(function(){
 
     Route::get('admin/locales', function () {

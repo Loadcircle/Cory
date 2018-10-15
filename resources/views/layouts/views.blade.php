@@ -6,6 +6,8 @@
 
         <title>35 Años Cory</title>
 
+        <link rel="shortcut icon" type="image/png" href="{{ asset('Cory/favicon.ico') }}"/>
+
         <!-- Styles -->
         <link href="{{ asset('css/views.css') }}" rel="stylesheet">
 
@@ -16,5 +18,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/views.js') }}" defer></script>
+
 </body>
 </html>

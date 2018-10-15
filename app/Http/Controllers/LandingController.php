@@ -33,17 +33,24 @@ class LandingController extends Controller
             'locals_id' => 'required',
         ]);
 
+        // if ($validator->fails()) {
+        //   return response()->json(['errors'=>$validator->errors()]);
 
-        $ticket = Ticket::create($request->all());
+        // }else{
 
-        $counter = Counter::where('rut', '=', $request->rut)->count();
+            $ticket = Ticket::create($request->all());
 
-        if($counter > 0){
-            Counter::where('rut', '=', $request->rut)->increment('number');
-        }else{
-            Counter::create(['rut' => $request->rut, 'number' => '1']);
-        }
+            $counter = Counter::where('rut', '=', $request->rut)->count();
 
-        return view('thankyou', compact('ticket'));
+            if($counter > 0){
+                Counter::where('rut', '=', $request->rut)->increment('number');
+            }else{
+                Counter::create(['rut' => $request->rut, 'number' => '1']);
+            }
+
+            return response()->json(['ok' => 'ok']);;
+
+        //}
+
     }
 }
